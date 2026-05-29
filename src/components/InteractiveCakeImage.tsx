@@ -38,7 +38,7 @@ export default function InteractiveCakeImage() {
   return (
     <div style={{ perspective: 1200 }} className="relative z-20 flex justify-center items-center w-full h-full touch-none">
       {/* Decorative Gold Glow behind the card */}
-      <div className="absolute inset-0 bg-[#D4AF37] blur-[100px] opacity-20 rounded-full pointer-events-none z-0"></div>
+      <div className="absolute inset-x-0 -inset-y-10 bg-[radial-gradient(circle,rgba(212,175,55,0.2)_0%,transparent_70%)] pointer-events-none z-0"></div>
       
       <motion.div
         style={{ 

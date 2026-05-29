@@ -114,8 +114,8 @@ export default function App() {
       {/* Hero Section */}
       <section className="relative pt-40 pb-16 lg:pt-48 lg:pb-20 border-b border-[#D4AF37]/10 overflow-hidden bg-white dark:bg-[#050505]">
         {/* Abstract luxury background blur */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-[#D4AF37] blur-[120px] opacity-20 pointer-events-none" />
-        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#D4AF37] rounded-full blur-[150px] opacity-10 pointer-events-none" />
+        <div className="absolute top-10 left-10 w-32 h-32 bg-[radial-gradient(circle,rgba(212,175,55,0.2)_0%,transparent_70%)] pointer-events-none" />
+        <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,175,55,0.1)_0%,transparent_70%)] rounded-full pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
@@ -258,7 +258,7 @@ export default function App() {
                     />
                  </div>
                  {/* Decorative elements */}
-                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[#D4AF37]/20 rounded-full blur-[60px] pointer-events-none"></div>
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-[radial-gradient(circle,rgba(212,175,55,0.2)_0%,transparent_70%)] rounded-full pointer-events-none"></div>
               </div>
            </div>
         </div>
