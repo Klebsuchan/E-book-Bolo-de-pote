@@ -1,6 +1,6 @@
-# Bolos de Pote Gourmet - Landing Page
+# Lucro no Pote - Landing Page
 
-Uma landing page premium e focada em conversão para a venda do treinamento e e-book "Bolos de Pote Gourmet". Construída com uma estética moderna, elegante e de alto contraste (Dark/Light mode), projetada para transmitir qualidade e aumentar as vendas.
+Uma landing page premium e focada em conversão para a venda do treinamento e e-book "Lucro no Pote". Construída com uma estética moderna, elegante e de alto contraste (Dark/Light mode), projetada para transmitir qualidade e aumentar as vendas.
 
 ## 🌟 Visão Geral
 
@@ -9,7 +9,7 @@ O projeto consiste em uma página de vendas completa desenvolvida em **React 18+
 - **Seção Hero Interativa:** Chamada principal com forte contraste visual.
 - **Benefícios (A Base Perfeita, Gestão de Ouro, etc):** Detalhando o que a pessoa vai aprender.
 - **Prova Social:** Logos estilizados de garantia e qualidade.
-- **Seção de Oferta e Checkout Direto:** Preço ancorado (de 97,99 por apenas 15,97) juntamente com bônus exclusivos (Planilha de Precificação, E-book Bolo Fitness e acesso vitalício).
+- **Seção de Oferta e Checkout Direto:** Preço ancorado (de 97,99 por apenas 17,50) juntamente com bônus exclusivos (Planilha de Precificação, E-book Bolo Fitness e acesso vitalício).
 - **FAQ (Perguntas Frequentes):** Sistema sanfona para tirar as dúvidas mais comuns dos compradores.
 
 ## 🚀 Tecnologias Utilizadas

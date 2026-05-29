@@ -28,15 +28,23 @@ export default function App() {
 
   return (
     <div className={`${theme} min-h-screen text-gray-900 bg-white dark:bg-[#050505] dark:text-white font-sans selection:bg-[#D4AF37] selection:text-black transition-colors duration-300`}>
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-gray-50 dark:bg-[#0a0a0a] border-b border-[#D4AF37]/20 transition-colors duration-300">
+      {/* Header Container */}
+      <div className="fixed top-0 w-full z-[60] flex flex-col shadow-sm">
+        {/* Top Banner */}
+        <div className="bg-[#D4AF37] text-black text-center py-2 px-4 text-[10px] md:text-xs font-bold uppercase tracking-widest flex items-center justify-center gap-2">
+          <Clock className="w-3 h-3 md:w-4 md:h-4 shrink-0" />
+          <span>Faltam apenas 37 vagas com os bônus exclusivos!</span>
+        </div>
+
+        {/* Navigation */}
+        <nav className="w-full bg-gray-50 dark:bg-[#0a0a0a] border-b border-[#D4AF37]/20 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gradient-to-tr from-[#D4AF37] to-[#F9E498] rounded-full flex items-center justify-center">
                 <ChefHat className="w-4 h-4 text-black" />
               </div>
-              <span className="font-serif italic text-xl tracking-tighter text-[#D4AF37]">DoceImpério</span>
+              <span className="font-serif italic text-xl tracking-tighter text-[#D4AF37]">Lucro no Pote</span>
             </div>
             
             {/* Desktop Nav */}
@@ -101,9 +109,10 @@ export default function App() {
           )}
         </AnimatePresence>
       </nav>
+      </div>
 
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 lg:pt-32 lg:pb-20 border-b border-[#D4AF37]/10 overflow-hidden bg-white dark:bg-[#050505]">
+      <section className="relative pt-40 pb-16 lg:pt-48 lg:pb-20 border-b border-[#D4AF37]/10 overflow-hidden bg-white dark:bg-[#050505]">
         {/* Abstract luxury background blur */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-[#D4AF37] blur-[120px] opacity-20 pointer-events-none" />
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-[#D4AF37] rounded-full blur-[150px] opacity-10 pointer-events-none" />
@@ -124,7 +133,7 @@ export default function App() {
               </h1>
               
               <p className="text-sm md:text-lg text-gray-700 dark:text-white/80 max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
-                Descubra as receitas secretas de Bolo de Pote Gourmet que vendem sozinhas e conquiste sua liberdade financeira sem sair de casa.
+                Descubra as receitas secretas do Lucro no Pote que vendem sozinhas e conquiste sua liberdade financeira sem sair de casa.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -142,6 +151,40 @@ export default function App() {
             >
               <InteractiveCakeImage />
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience */}
+      <section className="py-16 md:py-20 bg-gray-50 dark:bg-[#0a0a0a] border-b border-[#D4AF37]/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="font-serif text-[32px] md:text-[40px] font-light italic tracking-tight mb-4 text-gray-900 dark:text-white">
+              Para quem é o <span className="text-[#D4AF37] font-bold not-italic underline decoration-1 underline-offset-8">Lucro no Pote?</span>
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-3 gap-6">
+             <div className="bg-white dark:bg-[#050505] border border-gray-200 dark:border-white/5 p-8 rounded-[1.5rem] text-center transition-all hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(212,175,55,0.1)]">
+               <div className="w-12 h-12 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                 <CheckCircle className="w-6 h-6 text-[#D4AF37]" />
+               </div>
+               <h3 className="font-bold text-gray-900 dark:text-white mb-3 text-lg leading-tight">Para você que está desempregada</h3>
+               <p className="text-sm text-gray-600 dark:text-white/60 leading-relaxed font-medium">E quer uma fonte de renda rápida, montando um negócio na própria cozinha sem precisar de muito dinheiro para começar.</p>
+             </div>
+             <div className="bg-white dark:bg-[#050505] border border-gray-200 dark:border-white/5 p-8 rounded-[1.5rem] text-center transition-all hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(212,175,55,0.1)]">
+               <div className="w-12 h-12 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                 <TrendingUp className="w-6 h-6 text-[#D4AF37]" />
+               </div>
+               <h3 className="font-bold text-gray-900 dark:text-white mb-3 text-lg leading-tight">Para você que já faz bolos</h3>
+               <p className="text-sm text-gray-600 dark:text-white/60 leading-relaxed font-medium">E quer profissionalizar, escalar suas vendas, ter lucro de verdade e parar de perder dinheiro com precificação errada.</p>
+             </div>
+             <div className="bg-white dark:bg-[#050505] border border-gray-200 dark:border-white/5 p-8 rounded-[1.5rem] text-center transition-all hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(212,175,55,0.1)]">
+               <div className="w-12 h-12 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                 <ChefHat className="w-6 h-6 text-[#D4AF37]" />
+               </div>
+               <h3 className="font-bold text-gray-900 dark:text-white mb-3 text-lg leading-tight">Para quem nunca fez bolo na vida</h3>
+               <p className="text-sm text-gray-600 dark:text-white/60 leading-relaxed font-medium">Nosso método vai do zero. É perfeito para iniciantes, com um passo a passo simples, prático e totalmente à prova de falhas.</p>
+             </div>
           </div>
         </div>
       </section>
@@ -273,6 +316,27 @@ export default function App() {
       </section>
 
       {/* Checkout / Pricing CTA Section */}
+      {/* Guarantee Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-tr from-[#AA8822] to-[#F9E498] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 mix-blend-overlay" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, black 1px, transparent 0)', backgroundSize: '24px 24px' }}></div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div className="w-20 h-20 md:w-24 md:h-24 bg-black rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl relative">
+             <div className="absolute inset-2 border-2 border-[#D4AF37] rounded-full border-dashed animate-[spin_10s_linear_infinite]"></div>
+             <ShieldCheck className="w-10 h-10 md:w-12 md:h-12 text-[#D4AF37] relative z-10" />
+          </div>
+          <h2 className="font-serif text-[32px] md:text-[40px] font-bold text-black mb-6 leading-tight max-w-2xl mx-auto">
+            Garantia Incondicional de 7 Dias. Seu Risco é Zero.
+          </h2>
+          <p className="text-black/80 text-base md:text-lg max-w-2xl mx-auto font-bold leading-relaxed mb-8">
+            Nós confiamos tanto na qualidade do E-book que tiramos todo o peso das suas costas. Se em até 7 dias você achar que o material não é para você, basta solicitar a devolução do produto diretamente na Hotmart e devolveremos 100% do seu dinheiro. Simples assim.
+          </p>
+          <div className="inline-flex items-center gap-2 bg-black text-[#D4AF37] px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest shadow-xl border border-white/10">
+             <CheckCircle className="w-4 h-4" /> Dinheiro Devolvido na Hora
+          </div>
+        </div>
+      </section>
+
+      {/* Checkout Section */}
       <section id="checkout" className="py-16 md:py-20 relative bg-gray-50 dark:bg-[#0a0a0a] overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white dark:bg-[#050505] border border-[#D4AF37]/20 rounded-[2rem] p-6 sm:p-8 md:p-12 shadow-[0_0_40px_rgba(212,175,55,0.05)] grid lg:grid-cols-5 gap-10 lg:gap-12">
@@ -309,8 +373,8 @@ export default function App() {
                   <span className="text-gray-400 dark:text-white/40 line-through text-sm">De R$ 97,99</span>
                   <span className="text-[#D4AF37] font-bold text-[10px] uppercase tracking-widest border border-[#D4AF37]/30 px-2 py-0.5 rounded bg-[#D4AF37]/10">Por Apenas</span>
                 </div>
-                <div className="font-serif text-[48px] md:text-[56px] font-bold text-gray-900 dark:text-white tracking-tighter">R$ 15,97</div>
-                <p className="text-[11px] text-gray-400 dark:text-white/40 uppercase tracking-widest">Pagamento único à vista</p>
+                <div className="font-serif text-[48px] md:text-[56px] font-bold text-gray-900 dark:text-white tracking-tighter">R$ 17,50</div>
+                <p className="text-[11px] text-gray-400 dark:text-white/40 uppercase tracking-widest">À vista ou em até 2x no cartão</p>
               </div>
             </div>
 
@@ -324,21 +388,34 @@ export default function App() {
                 <h3 className="font-serif italic text-xl mb-1 text-gray-900 dark:text-white">Garanta sua Vaga</h3>
                 <p className="text-[10px] text-gray-500 dark:text-white/50 mb-6 uppercase tracking-widest">Acesso liberado imediatamente</p>
                 
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+                <form className="space-y-4" onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.currentTarget);
+                  const name = formData.get('name') as string;
+                  const email = formData.get('email') as string;
+                  const phone = formData.get('phone') as string;
+                  
+                  const url = new URL('https://pay.hotmart.com/G106050670N');
+                  if (name) url.searchParams.set('name', name);
+                  if (email) url.searchParams.set('email', email);
+                  if (phone) url.searchParams.set('phonenumber', phone);
+                  
+                  window.location.href = url.toString();
+                }}>
                   <div>
                     <label className="block text-[10px] uppercase tracking-widest text-[#D4AF37] mb-1 font-bold">Nome Completo</label>
-                    <input type="text" className="w-full bg-white dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-xs md:text-sm focus:border-[#D4AF37] outline-none text-gray-900 dark:text-white transition-colors" placeholder="Ex: Maria Silva" />
+                    <input type="text" name="name" className="w-full bg-white dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-xs md:text-sm focus:border-[#D4AF37] outline-none text-gray-900 dark:text-white transition-colors" placeholder="Ex: Maria Silva" />
                   </div>
                   <div>
                     <label className="block text-[10px] uppercase tracking-widest text-[#D4AF37] mb-1 font-bold">E-mail para Acesso</label>
-                    <input type="email" className="w-full bg-white dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-xs md:text-sm focus:border-[#D4AF37] outline-none text-gray-900 dark:text-white transition-colors" placeholder="Para receber o acesso" />
+                    <input type="email" name="email" required className="w-full bg-white dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-xs md:text-sm focus:border-[#D4AF37] outline-none text-gray-900 dark:text-white transition-colors" placeholder="Para receber o acesso" />
                   </div>
                   <div>
                     <label className="block text-[10px] uppercase tracking-widest text-[#D4AF37] mb-1 font-bold">WhatsApp</label>
-                    <input type="text" className="w-full bg-white dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-xs md:text-sm focus:border-[#D4AF37] outline-none text-gray-900 dark:text-white transition-colors" placeholder="(00) 00000-0000" />
+                    <input type="text" name="phone" className="w-full bg-white dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg px-4 py-3 text-xs md:text-sm focus:border-[#D4AF37] outline-none text-gray-900 dark:text-white transition-colors" placeholder="(00) 00000-0000" />
                   </div>
                   
-                  <button type="button" className="w-full bg-gradient-to-r from-[#D4AF37] to-[#F9E498] text-black font-bold uppercase tracking-widest text-[11px] rounded-lg py-4 transition-all shadow-[0_10px_20px_rgba(212,175,55,0.3)] mt-4">
+                  <button type="submit" className="w-full bg-gradient-to-r from-[#D4AF37] to-[#F9E498] text-black font-bold uppercase tracking-widest text-[11px] rounded-lg py-4 transition-all hover:scale-[1.02] shadow-[0_10px_20px_rgba(212,175,55,0.3)] mt-4">
                     Quero Meu Acesso Agora
                   </button>
                   
@@ -373,7 +450,7 @@ export default function App() {
             />
             <FAQItem 
               question="Quais as formas de pagamento aceitas?" 
-              answer="Aceitamos PIX, Cartão de Crédito em até 5x e Boleto Bancário. Compras no PIX e Cartão têm liberação imediata."
+              answer="Aceitamos PIX, Cartão de Crédito em até 2x e Boleto Bancário. Compras no PIX e Cartão têm liberação imediata."
             />
             <FAQItem 
               question="E se eu não gostar?" 
@@ -389,7 +466,7 @@ export default function App() {
           <div className="w-8 h-8 bg-gradient-to-tr from-[#D4AF37] to-[#F9E498] rounded-full flex items-center justify-center mb-4">
             <ChefHat className="w-4 h-4 text-black" />
           </div>
-          <span className="font-serif italic text-xl tracking-tighter text-[#D4AF37] mb-4">DoceImpério</span>
+          <span className="font-serif italic text-xl tracking-tighter text-[#D4AF37] mb-4">Lucro no Pote</span>
           <p className="text-gray-400 dark:text-white/30 text-[10px] uppercase tracking-widest mb-6 text-center max-w-lg leading-relaxed">
             Este site não é afiliado ao Facebook. A responsabilidade do conteúdo é exclusivamente da nossa equipe.
           </p>
@@ -397,7 +474,7 @@ export default function App() {
             <a href="#" className="hover:text-[#D4AF37] transition-colors">Termos de Uso</a>
             <a href="#" className="hover:text-[#D4AF37] transition-colors">Políticas de Privacidade</a>
           </div>
-          <p className="mt-8 text-xs text-gray-700">© 2026 Doce Império. Todos os direitos reservados.</p>
+          <p className="mt-8 text-xs text-gray-700">© 2026 Lucro no Pote. Todos os direitos reservados.</p>
         </div>
 
         {/* Dense info bar at absolute bottom */}
