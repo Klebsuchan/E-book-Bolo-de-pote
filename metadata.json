@@ -1,6 +1,6 @@
 {
-  "name": "Lucro no Pote",
-  "description": "E-book: Renda Extra com Lucro no Pote. Landing page de alta conversão.",
+  "name": "E-book Lucro no Pote",
+  "description": "A landing page do E-book Lucro no Pote, otimizada para AdSense e SEO.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
