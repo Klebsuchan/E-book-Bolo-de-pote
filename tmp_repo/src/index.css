@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-gold-300: #F3E5AB;
+  --color-gold-400: #E6C27A;
+  --color-gold-500: #D4AF37;
+  --color-dark-900: #050505;
+  --color-dark-800: #0a0a0a;
+
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+body {
+  background-color: var(--color-dark-900);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.dark body {
+  background-color: var(--color-dark-900);
+  color: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
