@@ -1,0 +1,17 @@
+{
+  "name": "Lucro no Pote",
+  "short_name": "Lucro no Pote",
+  "description": "Aprenda a Fazer e Vender Bolo no Pote",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
